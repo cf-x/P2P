@@ -1,0 +1,20 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_tweet_ood_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/tweet_ood_test
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# User History: 
+  {profile_all_history}
+
+  # Instruction: 
+  Paraphrase the following text into tweet without any explanation before or after it.
+
+  # Original Text: 
+  {original_tweet}
+
+  # Output Format: 
+  Just answer the paraphrased tweet without further explanation.
+  
+  # Answer:"

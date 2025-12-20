@@ -1,0 +1,18 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_tweet_random_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/tweet_random_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Tweet paraphrasing: Rewrite tweets in a personal style while maintaining the original meaning and adapting the tone and language to individual communication patterns.'
+user_prompt_template: "# Instruction:
+  Paraphrase the following text into tweet without any explanation before or after it.
+  
+  # Original Tweet:
+  {original_tweet}
+
+  # Output Format:
+  Just answer the paraphrased tweet without further explanation.
+  
+  # Answer:"

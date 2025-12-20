@@ -1,0 +1,17 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_news_headline_random_train
+  path: ./data_p13n/hf_datasets/LaMP/news_headline_random_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Generate a headline for the following article.
+  
+  # Article:
+  {article}
+
+  # Output Format:
+  Just answer the headline without further explanation.
+  
+  # Answer:"

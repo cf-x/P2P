@@ -1,0 +1,18 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_product_random_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/product_random_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Product review rating prediction: Analyze product reviews and predict the rating score based on sentiment, content quality, and expressed satisfaction levels.'
+user_prompt_template: "# Instruction:
+  What is the score of the following review on a scale of 1 to 5? 
+  
+  # Review:
+  {review_text}
+
+  # Output Format:
+  Just answer with 1, 2, 3, 4, or 5 without further explanation.
+  
+  # Answer:"

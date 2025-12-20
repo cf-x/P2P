@@ -1,0 +1,17 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: longlamp_abstract_generation_random_train
+  path: ./data_p13n/hf_datasets_v2/LongLaMP/abstract_generation_random_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Given the paper title and key items, generate an abstract for the paper.
+
+  # Paper Title:
+  {paper_title}
+
+  # Output Format:
+  Only output the abstract. Do not include any explanation or formatting.
+  
+  # Answer:"

@@ -1,0 +1,8 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: personalreddit_ood_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/PersonalReddit/ood_test
+train_first_n: null
+response_field: output
+system_message: '# User Profile: {profile_text}'
+user_prompt_template: "{input_text}"

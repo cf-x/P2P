@@ -1,0 +1,18 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_scholarly_title_random_train
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/scholarly_title_train
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Academic title generation: Generate concise and descriptive titles for research papers based on abstracts, capturing the main research contribution and scope.'
+user_prompt_template: "# Instruction:
+  Generate a title for the following abstract of a paper.
+  
+  # Abstract:
+  {abstract}
+
+  # Output Format:
+  Just answer the title without further explanation.
+  
+  # Answer:"

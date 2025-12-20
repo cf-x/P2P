@@ -1,0 +1,77 @@
+batch_size: 4
+train_ds_names:
+  - lamp_citation_train
+  - lamp_movie_train
+  - lamp_news_headline_train
+  - lamp_news_cat_train
+  - lamp_product_train
+  - lamp_scholarly_title_train
+  - lamp_tweet_train
+  - longlamp_abstract_generation_train
+  - longlamp_product_review_train
+  - longlamp_topic_writing_train
+  # - opinionqa_train
+  - personalreddit_train
+  - prism_train
+  - aloe_train
+  - EC_train
+  
+epochs: 10
+eval_ds_info:
+  # training tasks, for validation
+  # - lamp_news_headline_random_train
+  # - lamp_tweet_random_train
+  # - lamp_movie_random_train
+  # - longlamp_abstract_generation_random_train
+  # - opinionqa_random_train
+  # training tasks, for testing
+  - lamp_citation_random_test
+  - lamp_movie_random_test
+  - lamp_news_cat_random_test
+  - lamp_news_headline_random_test
+  - lamp_product_random_test
+  - lamp_scholarly_title_random_test
+  - lamp_tweet_random_test
+  - longlamp_abstract_generation_random_test
+  - longlamp_product_review_random_test
+  - longlamp_topic_writing_random_test
+  - lamp_citation_ood_test
+  - lamp_movie_ood_test
+  - lamp_news_cat_ood_test
+  - lamp_news_headline_ood_test
+  - lamp_product_ood_test
+  - lamp_scholarly_title_ood_test
+  - lamp_tweet_ood_test
+  - longlamp_abstract_generation_ood_test
+  - longlamp_product_review_ood_test
+  - longlamp_topic_writing_ood_test
+  - aloe_ood_test
+  - aloe_random_test
+  - prism_ood_test
+  - prism_random_test
+  - EC_ood_test
+  - EC_random_test
+  - personalreddit_ood_test
+  - personalreddit_random_test
+  
+
+exp_setup: hyper_lora
+grad_accum_steps: 64 # ?
+logging_freq: 100
+lr: 0.00001
+max_grad_norm: 1.0
+model_dir: models/Llama-3.1-8B-Instruct/
+neftune_noise_alpha: 5
+seed: 42
+skip_eval: false
+target_modules:
+  - q_proj
+  - v_proj
+sft_mode: completion
+use_one_hot_task_emb: false
+warmup_frac: 0.1
+use_hierarchical_sampler: true
+inp_max_len: 1024
+head_in_size: 2048
+hypernet_latent_size: 1024
+delta_w_scaling: 100

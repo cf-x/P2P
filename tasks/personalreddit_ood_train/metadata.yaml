@@ -1,0 +1,8 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: personalreddit_ood_train
+  path: ./data_p13n/hf_datasets_profile_split/PersonalReddit/ood_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "{input_text}"

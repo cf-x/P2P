@@ -1,0 +1,17 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: longlamp_topic_writing_ood_train
+  path: ./data_p13n/hf_datasets_profile_split/LongLaMP/topic_writing_ood_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Generate the content for a Reddit post based on the provided topic.
+
+  # Topic:
+  {topic_prompt}
+
+  # Output Format:
+  Only output the reddit post. Do not include any explanation or formatting.
+  
+  # Answer:"

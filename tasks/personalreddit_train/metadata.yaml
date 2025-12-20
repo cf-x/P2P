@@ -1,0 +1,9 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: personalreddit_ood_train
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/PersonalReddit/train
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Personal conversation response: Generate authentic and personalized responses to conversations that reflect individual personality, background, and communication style.'
+user_prompt_template: "{input_text}"

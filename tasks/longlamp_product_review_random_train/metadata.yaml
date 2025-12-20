@@ -1,0 +1,23 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: longlamp_product_review_random_train
+  path: ./data_p13n/hf_datasets_v2/LongLaMP/product_review_random_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Given the overall rating, product description, and review summary, generate the review text written by a reviewer.
+
+  # Overall Rating:
+  {rating}
+
+  # Product Description:
+  {product_description}
+
+  # Review Summary:
+  {review_summary}
+
+  # Output Format:
+  Only output the review text. Do not include any explanation or formatting.
+  
+  # Answer:"

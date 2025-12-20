@@ -1,0 +1,21 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_movie_ood_train
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/movie_ood_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Movie genre tagging: Analyze movie descriptions and assign appropriate genre tags based on content themes, narrative elements, and stylistic features.'
+user_prompt_template: "# Instruction: 
+  Which tag does this movie relate to among the following tags?
+
+  # Tags: 
+  [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]
+
+  # Description: 
+  {description}
+
+  # Output Format: 
+  Just answer with the tag name without further explanation.
+  
+  # Answer:"

@@ -1,0 +1,18 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: longlamp_topic_writing_ood_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LongLaMP/topic_writing_ood_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Topic-based content generation: Create personalized Reddit posts on given topics that reflect individual writing style, interests, and communication preferences.'
+user_prompt_template: "# Instruction:
+  Generate the content for a Reddit post based on the provided topic.
+
+  # Topic:
+  {topic_prompt}
+
+  # Output Format:
+  Only output the reddit post. Do not include any explanation or formatting.
+  
+  # Answer:"

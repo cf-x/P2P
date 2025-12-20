@@ -1,0 +1,17 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_scholarly_title_random_train
+  path: ./data_p13n/hf_datasets_profile_split/LaMP/scholarly_title_random_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Generate a title for the following abstract of a paper.
+  
+  # Abstract:
+  {abstract}
+
+  # Output Format:
+  Just answer the title without further explanation.
+  
+  # Answer:"

@@ -1,0 +1,9 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: prism_ood_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/PRISM/ood_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Generate a personalized response to the user based on the profile and personality traits.'
+prepand_profile: false

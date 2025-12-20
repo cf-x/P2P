@@ -1,0 +1,21 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: longlamp_abstract_generation_ood_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LongLaMP/abstract_generation_ood_test
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# User History: 
+  {profile_all_history}
+
+  # Instruction: 
+  Given the paper title and key items, generate an abstract for the
+  paper.
+
+  # Paper Title: 
+  {paper_title}
+
+  # Output Format:
+  Only output the abstract. Do not include any explanation or formatting.
+  
+  # Answer:"

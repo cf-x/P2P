@@ -1,0 +1,21 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_news_cat_random_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/news_cat_random_test
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'News article categorization: Classify news articles into topical categories based on content, subject matter, and thematic focus.'
+user_prompt_template: "# Instruction:
+  Which category does this article relate to among the following categories? Just answer with the category name without further explanation. 
+  
+  # Categories:
+  [travel, education, parents, style & beauty, entertainment, food & drink, science & technology, business, sports, healthy living, women, politics, crime, culture & arts, religion]
+  
+  # Article:
+  {article}
+
+  # Output Format:
+  Just answer the category without further explanation.
+  
+  # Answer:"

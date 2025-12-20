@@ -1,0 +1,20 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_movie_random_train
+  path: ./data_p13n/hf_datasets_profile_split/LaMP/movie_random_train
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# Instruction:
+  Which tag does this movie relate to among the following tags? 
+  
+  # Tags:
+  [sci-fi, based on a book, comedy, action, twist ending, dystopia, dark comedy, classic, psychology, fantasy, romance, thought-provoking, social commentary, violence, true story]
+
+  # Description:
+  {description}
+
+  # Output Format:
+  Just answer with the tag name without further explanation.
+  
+  # Answer:"

@@ -1,0 +1,23 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: lamp_citation_random_test
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/LaMP/citation_random_test
+train_first_n: null
+response_field: output
+system_message: ''
+user_prompt_template: "# User History:
+  {profile_retrieval_k4}
+
+  # Instruction:
+  Identify the most relevant reference for the listed publication by the researcher. Select the reference paper that is most closely related to the researcher's work.
+  
+  # Paper Title:
+  {paper_title}
+
+  # Options:
+  {options_str}
+
+  # Output Format:
+  Just answer with [1] or [2] without explanation.
+  
+  # Answer:"

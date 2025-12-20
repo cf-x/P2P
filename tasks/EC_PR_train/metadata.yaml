@@ -1,0 +1,18 @@
+assistant_prefill: ''
+ds_kwargs:
+  name: EC_random_train
+  path: ./data_p13n/hf_datasets_history_split_task_specific_profile_retrieval_v3/EC/train
+train_first_n: null
+response_field: output
+system_message: ''
+task_description: 'Empathetic news commentary: Provide personal commentary and emotional reactions to news articles that reflect individual values, perspectives, and empathetic responses.'
+user_prompt_template: "# Instruction:
+  Read the following news article and provide your personal commentary or reaction.
+
+  # Article:
+  {article}
+
+  # Output Format:
+  Only output the personal commentary or reaction. Don't include any other text.
+  
+  # Answer:"
