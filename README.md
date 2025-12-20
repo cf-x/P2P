@@ -37,7 +37,7 @@ uv pip install openai rank-bm25
 ---
 <h1 align="center">🏋️ Training</h1>
 <div align="center">
-    <img width="85%" src="assets/Profile2PEFT_overview.png" />
+    <img width="75%" src="assets/Profile2PEFT_overview.png" />
 </div>
 
 ## Download Dataset
