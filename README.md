@@ -2,7 +2,7 @@
 <div align="center">
     :scroll:<a href="https://www.arxiv.org/abs/2510.16282">Paper</a> |
     :hugs:<a href="https://huggingface.co/Zhaoxuan/P2P_ckpt">Hugging Face (Model)</a> |
-    :hugs:<a href="https://huggingface.co/Zhaoxuan/P2P_ckpt">Hugging Face (Data)</a> |
+    :hugs:<a href="https://huggingface.co/datasets/Zhaoxuan/P2P_data">Hugging Face (Data)</a> |
     :octocat:<a href="https://github.com/TamSiuhin/P2P">GitHub</a>
 <br>A reference implementation of Profile-to-PEFT (P2P).<br>
 
