@@ -21,7 +21,7 @@ Install `uv` if you don't have `uv` (see https://docs.astral.sh/uv/getting-start
 With `uv` installed, run the following to install the dependencies.
 ```bash
 git clone https://github.com/TamSiuhin/P2P.git
-cd p2p
+cd P2P
 # make sure you have `uv` installed
 # (see https://docs.astral.sh/uv/getting-started/installation/)
 uv self update
